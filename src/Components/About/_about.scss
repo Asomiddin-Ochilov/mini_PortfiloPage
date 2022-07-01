@@ -1,0 +1,181 @@
+.dark {
+     .about {
+          .user_name {
+               .left,
+               .status,
+               .right {
+                    color: white;
+               }
+          }
+
+          .description {
+               background-color: #101020;
+
+               .text,
+               .font_bold {
+                    color: white;
+               }
+          }
+     }
+}
+.about {
+     width: 100%;
+     margin: auto;
+     margin-top: 90px;
+     transition: 0.2s all ease-out;
+     .user_name {
+          width: 940px;
+          margin: auto;
+          height: 188px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .right {
+               transform: rotate(-90deg);
+               display: flex;
+               span {
+                    width: 3px;
+                    height: 20px;
+                    background-color: #070707;
+                    display: inline-block;
+                    margin: 0 5px;
+               }
+               .language {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    text-transform: uppercase;
+                    cursor: pointer;
+               }
+          }
+     }
+     .center {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin: auto;
+          img {
+               width: 940px;
+               height: 387px;
+          }
+     }
+
+     .description {
+          margin-top: 100px;
+          width: 100%;
+          background-color: #f6f6f6;
+          text-align: center;
+          padding: 100px 0;
+          .font_bold {
+               color: #070707;
+          }
+          .text {
+               width: 480px;
+               margin: 2rem auto;
+               font-family: 'Poppins', sans-serif;
+               font-weight: 400;
+               font-size: 18px;
+               line-height: 22px;
+               letter-spacing: 0em;
+               text-align: center;
+               color: #070707;
+          }
+     }
+
+     // media
+
+     @media (min-width: 800px) and (max-width: 960px) {
+          .user_name {
+               width: 100%;
+               padding: 0 1rem;
+          }
+          .center {
+               img {
+                    width: 100%;
+               }
+          }
+     }
+     
+     @media (min-width: 600px) and (max-width: 800px) {
+          .user_name {
+               width: 100%;
+               padding: 0 1rem;
+          }
+          .center {
+               img {
+                    width: 100%;
+                    height: 350px;
+               }
+          }
+     }
+
+     @media (min-width: 400px) and (max-width: 600px) {
+          .user_name {
+               width: 100%;
+               padding: 0 1rem;
+
+               flex-wrap: wrap;
+               .status,
+               .left {
+                    width: 100%;
+                    text-align: center;
+               }
+               .right {
+                    justify-content: center;
+                    width: 100%;
+                    transform: rotate(0);
+               }
+          }
+          .center {
+               img {
+                    width: 100%;
+                    height: 300px;
+                    margin-top: 1rem;
+               }
+          }
+
+          .description {
+               .text {
+                    width: 99%;
+               }
+          }
+     }
+
+     @media screen and (max-width: 400px) {
+          margin-top: 15px;
+          .user_name {
+               width: 100%;
+               padding: 0 1rem;
+
+               flex-wrap: wrap;
+               .status,
+               .left {
+                    width: 100%;
+                    text-align: center;
+               }
+               .right {
+                    justify-content: center;
+                    width: 100%;
+                    transform: rotate(0);
+               }
+          }
+          .center {
+               img {
+                    width: 100%;
+                    height: 250px;
+                    margin-top: 1rem;
+               }
+          }
+
+          .description {
+               padding: 40px 20px ;
+               .text {
+                    width: 95%;
+               }
+          }
+     }
+}

@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React,  { useEffect, useState } from "react";
+import About from "./Components/About";
+import Contacts from "./Components/Contacts";
+import DarkMode from "./Components/DarkMode";
+import Header from "./Components/Header";
+import Portfolio from "./Components/Portfolio";
+import Skill from "./Components/Skill";
+import Loader from "./Components/Loader"
 function App() {
+
+  const [loading, setLoading] = useState(true);
+  
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoading(false)   
+    },3000)
+  },[])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="home" className="App">
+      {
+        loading ? <Loader loading={loading} /> 
+        : <React.Fragment>
+      <DarkMode/>
+      <Header />
+      <About />
+      <Skill/>
+      <Portfolio/>
+      <Contacts/>
+      </React.Fragment>
+      }
     </div>
   );
 }

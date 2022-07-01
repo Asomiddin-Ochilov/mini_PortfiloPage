@@ -1,0 +1,78 @@
+.dark{
+     .contact{
+
+          .font_bold , .text{
+               color: white;
+          }
+          
+          .links{
+
+               a{
+                    color: white;
+               }
+          }
+     }
+}
+
+.contact {
+     width: 100%;
+     text-align: center;
+     padding: 70px 0;
+     .text {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: #070707;
+          margin-top: 20px;
+     }
+     button {
+          width: 180px;
+          height: 42px;
+          border-radius: 20px;
+          background-color: #070707;
+          margin-top: 30px;
+          color: white;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+          letter-spacing: 0em;
+          text-align: center;
+          cursor: pointer;
+          border: 1px solid transparent;
+          transition: 0.2s all ease-out;
+          &:active {
+               border: 2px solid rgb(201, 200, 200);
+          }
+     }
+     .links {
+          margin-top: 40px;
+          a {
+               font-size: 33px;
+               text-decoration: none;
+               margin: 0 30px;
+               color: #070707;
+          }
+     }
+}
+
+.ant-btn-primary {
+     background-color: #070707 !important;
+     border-color: transparent !important;
+}
+.form {
+     input {
+          margin: 10px 0;
+          height: 40px;
+     }
+     .phone_number {
+          margin-bottom: 10px;
+          height: 50px;
+          input {
+               height: auto;
+          }
+     }
+}

@@ -1,0 +1,49 @@
+@import "../Components/Header/header";
+@import "../Components/About/about";
+@import "../Components/Skill/skill";
+@import "../Components/Portfolio/portfolio";
+@import "../Components/Contacts/contact";
+@import "../Components/DarkMode/darkMode";
+@import "../Components/Loader/loader";
+
+$black: #070707;
+body {
+     transition: 0.2s all ease-out;
+     border: none;
+     &::-webkit-scrollbar {
+          width: 0;
+     }
+}
+html {
+     scroll-behavior: smooth;
+}
+.dark {
+     background-color: #0e0e1b;
+}
+* {
+     box-sizing: border-box !important;
+     margin: 0;
+     padding: 0;
+}
+
+.App {
+     margin: auto;
+     width: 100%;
+     border: none;
+     position: relative;
+}
+
+.font_bold {
+     font-family: 'Poppins', sans-serif;
+     font-weight: 600;
+     font-size: 34px;
+     line-height: 42px;
+     letter-spacing: 0em;
+}
+.font_medium {
+     font-family: 'Poppins', sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 22px;
+     letter-spacing: 0em;
+}
